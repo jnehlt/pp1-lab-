@@ -42,11 +42,11 @@ void input(float A[] , float B[]){          //wprowadzanie danych i walidacja
     for(i = 0 ; i < 2 ; i++)
     {
         if(A[i * 1 + i] == -1)                          //x
-            printf("- x " , A[i * 1 + i]);              //
+            printf("x " , A[i * 1 + i]);                //
         else if(A[i * 1 + i] == 1)                      //
             printf("x " , A[i * 1 + i]);                //
         else if(A[i * 1 + i] < 0)                       //
-            printf("- %.0fx " , A[i * 1 + i] * -1);     //
+            printf("%.0fx " , A[i * 1 + i] * -1);       //
         else if(A[i * 1 + i] >= 0)                      //
             printf("%.0fx " , A[i * 1 + i]);            //end_x
 
@@ -55,14 +55,14 @@ void input(float A[] , float B[]){          //wprowadzanie danych i walidacja
         else if(A[i * 1 + i + 1] == 1)                  //
             printf("+ y ");                             //
         else if(A[i * 1 + i + 1] < 0)                   //
-            printf("- %.0fy " , A[i * 1 + i + 1] * -1); //
+            printf("- %.1fy " , A[i * 1 + i + 1] * -1); //
         else if(A[i * 1 + i + 1] >= 0)                  //
-            printf("+ %0.fy " , A[i * 1 + i + 1]);      //end_y
+            printf("+ %1.fy " , A[i * 1 + i + 1]);      //end_y
 
         if(B[i] >= 0)                                   //=
-            printf("= %.0f\n" , B[i]);                  //
+            printf("= %.1f\n" , B[i]);                  //
         if(B[i] < 0)                                    //
-            printf("= - %.0f\n" , B[i] * -1);           //end_=
+            printf("= - %.1f\n" , B[i] * -1);           //end_=
     }
 }
 
