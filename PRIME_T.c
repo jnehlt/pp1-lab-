@@ -20,7 +20,7 @@ int io_check(){
         if(chk_in != 10)        //NULL at the end
             chk = 0;
         n = nf2;
-    }while(!chk || n <= 0 || /*n > 100000 ||*/ n != nf2);
+    }while(!chk || n <= 0 || n > 100000 || n != nf2);
 
     return n;
 }
