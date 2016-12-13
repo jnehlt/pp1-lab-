@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int io_check(){
+int io_check(void){
     int n , chk = 0;
     float nf2;
     char chk_in;
