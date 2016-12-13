@@ -17,7 +17,7 @@ int io_check(){
         chk = scanf("%f" , &nf2);
         chk_in = getchar();
         fflush(stdin);
-        if(chk_in != 10)        //NULL at the end
+        if(chk_in != 10)        //NL
             chk = 0;
         n = nf2;
     }while(!chk || n <= 0 || n > 100000 || n != nf2);
