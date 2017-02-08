@@ -1,12 +1,13 @@
+///zad 7
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 
 void generuj(double tab[] , int n , const double dol , const double gora)
 {
-    //////////////////
+    ////////////////////////////
     srand(time(NULL) ^ clock());
-    //////////////////
+    ////////////////////////////
 
     int i;
     for(i = 0 ; i < n*n ; i++)
