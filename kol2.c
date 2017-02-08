@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <time.h>
 
-void generuj(double tab[] , int n , const double dol , const double gora)
+void generuj(double tab[] , const int n , const double dol , const double gora)
 {
     ////////////////////////////
     srand(time(NULL) ^ clock());
